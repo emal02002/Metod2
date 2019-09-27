@@ -14,7 +14,7 @@ namespace metod_2
         public static void byt(ref int a, ref int b)
         {
             int temp = a;
-            b = a;
+            a = b;
             b = temp;
         }
     }
