@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace metod_del2_uppgift_2
 {
@@ -11,13 +11,19 @@ namespace metod_del2_uppgift_2
             Console.WriteLine("Ange en exponenet");
             int exponent = int.Parse(Console.ReadLine());
             power(bas, exponent);
-            Console.WriteLine(power(bas, exponent));
+            Console.WriteLine("Svaret bli: " + power(bas, exponent));
          }
 
 
         static public int power(int b ,int e)
         {
-            return (b * e);
+          int result = 1;
+          for(int i = 0; i < e; i++)
+          {
+            result = result * b;
+
+          }
+          return result;
         }
 
     }
