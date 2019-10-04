@@ -17,13 +17,13 @@ namespace metod_del2_uppgift_2
 
         static public int power(int b ,int e)
         {
-          int result = 1;
+          int resultat = 1;
           for(int i = 0; i < e; i++)
           {
-            result = result * b;
+            resultat = resultat * b;
 
           }
-          return result;
+          return resultat;
         }
 
     }
